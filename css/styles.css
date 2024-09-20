@@ -4,17 +4,29 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    border: 10px;
+    padding-left: 25px;
 }
 
-.nav{
+nav{
     display: flex;
+    padding-right: 100px;
 }
+
 
 nav > a{
-    padding: 8px;
+    padding: 8px 40px 8px;
     border: 1px solid;
     color: black;
     text-decoration: none;
+}
+
+.rounded-left{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.rounded-right{
+    border-radius: 0px 5px 5px 0px;
 }
 
 .logo-icon{
