@@ -4,8 +4,14 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    border: 10px;
     padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-container{
+    padding-left: 70px;
+    padding-top: 5px;
 }
 
 nav{
@@ -39,12 +45,14 @@ nav > a{
 }
 
 .photo-banner{
-    border: 1px solid;
-    height: 480px;
-    background-image: url(https://www.alleycat.org/wp-content/uploads/2019/03/FELV-cat.jpg);
-    background-position: center;
-    background-size: cover;
+    width: 1366px;
+    height: 578px;
+}
 
+.photo-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .profile-icon{
@@ -66,4 +74,14 @@ nav > a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.nama_table {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-right{
+    display: flex;
+    justify-content: flex-end;
 }
