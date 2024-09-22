@@ -1,5 +1,11 @@
 /* ini css */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;;
+}
+
 .main-header{
     display: flex;
     justify-content: space-between; 
@@ -12,6 +18,7 @@
 .text-container{
     padding-left: 70px;
     padding-top: 5px;
+    width: 100%;
 }
 
 nav{
@@ -58,16 +65,20 @@ nav > a{
 .profile-icon{
     height: 200px;
     width: 200px;
-    background-image: url(../assests/logo.jpg.jpg); 
+    background-image: url(../assests/toped.png); 
     background-size: cover;
     background-position: center;
     border-radius: 50%;
+    border: 2px solid;
 }
 
 .profile-icon-container{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .icon-name-container{
@@ -76,12 +87,82 @@ nav > a{
     align-items: center;
 }
 
-.nama_table {
+.about-company-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.about-company-container>h3 {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.about-company-container > h4 {
+    text-align: center;
+    font-weight: normal;
+}
+
+#vision{
+    margin-top: 0px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.message-container{
+    padding-bottom: 70px;
+    padding-right: 70px;
+}
+
+.container-input{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.class-name-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.class-dot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nama-table {
     display: flex;
     flex-direction: row;
+    gap: 12px;
+}
+
+.input-table{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.result-container{
+    border: 1px solid black;
+    width: 50%;
+}
+
+form button {
+    width: 68%;
+    padding: 5px;
 }
 
 .footer-right{
     display: flex;
     justify-content: flex-end;
+    padding-right: 70px;
 }
