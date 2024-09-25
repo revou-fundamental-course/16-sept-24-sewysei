@@ -77,7 +77,7 @@ nav > a{
 .photo-container button{
     height: 20%;
     background-color: transparent;
-    border:  none;
+    border: none;
 }
 
 .photo-container button:hover {
@@ -210,6 +210,10 @@ form button {
     padding-right: 70px;
 }
 
+li::marker {
+    margin-right: 0%;
+}
+
 @media only screen and (max-width: 768px) {
     .main-header {
         flex-direction: column;
@@ -264,7 +268,7 @@ form button {
     padding: 5px;
     }
     .result-container{
-        width: 99%;
+        width: 94%;
     }
     .footer-right{
     display: flex;
@@ -272,5 +276,19 @@ form button {
     padding-right: 0;
     padding-bottom: 5px;
     }
-
+    .text-container li {
+    width: auto;
+    font-weight: normal;
+    padding-right: 10px;
+    }
+    .photo-container button{
+    height: 20%;
+    background-color: transparent;
+    border:  none;
+    
+    }
+    .photo-banner{
+    width: 430px;
+    height: 430px;
+    }
 }
