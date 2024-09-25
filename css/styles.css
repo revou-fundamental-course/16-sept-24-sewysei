@@ -3,22 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    font-family: "Poppins", sans-serif;;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 .main-header{
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding-left: 25px;
+    padding-left: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+hr{
+    width: 100%;
+}
+
 .text-container{
     padding-left: 70px;
-    padding-top: 5px;
     width: 100%;
+    padding-top: 5px;
 }
 
 nav{
@@ -151,13 +156,20 @@ nav > a{
     margin-bottom: 12px;
 }
 
+.radio-gap{
+   margin-top: 3px; 
+   margin-bottom: 5px
+}
+
 .result-container{
-    border: 1px solid black;
-    width: 50%;
+    border: 2px solid black;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 form button {
-    width: 68%;
+    width: 81.3%;
     padding: 5px;
 }
 
@@ -165,4 +177,69 @@ form button {
     display: flex;
     justify-content: flex-end;
     padding-right: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        gap: 12px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .text-container {
+        padding: 0px;
+        width: 100%;
+    }
+    .about-company-container{
+    padding-right: 10px;
+    padding-left: 10px;
+    }
+    .about-company-container h4{
+        text-align: justify;
+    }
+    .about-company-container p{
+        text-align: justify;
+    }
+    .form-container{
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .message-container{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .container-input{
+        gap: 0px;
+    }
+    form button {
+    width: 100%;
+    padding: 5px;
+    }
+    .result-container{
+        width: 99%;
+    }
+    .footer-right{
+    display: flex;
+    justify-content: center;
+    padding-right: 0;
+    padding-bottom: 5px;
+    }
+
 }
