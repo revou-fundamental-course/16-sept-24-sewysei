@@ -26,6 +26,11 @@ hr{
     padding-top: 5px;
 }
 
+.text-container li {
+    width: 90%;
+    font-weight: normal;
+}
+
 nav{
     display: flex;
     padding-right: 100px;
@@ -65,6 +70,24 @@ nav > a{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.photo-container button{
+    height: 20%;
+    background-color: transparent;
+    border:  none;
+}
+
+.photo-container button:hover {
+    height: 20%;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.photo-container button span {
+    font-size: 40px;
 }
 
 .profile-icon{
@@ -112,6 +135,14 @@ nav > a{
 
 #vision{
     margin-top: 0px;
+}
+
+#section-portfolio h3 {
+    text-align: center ;
+}
+
+#section-portfolio h4 {
+    text-align: justify;
 }
 
 .form-container{
