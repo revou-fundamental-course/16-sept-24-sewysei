@@ -1,6 +1,5 @@
-let nameUser = prompt("Masukkan nama Anda");
-document.getElementById("name-top").innerHTML = nameUser;
-
+    let nameUser = prompt("Masukkan nama Anda");
+    document.getElementById("name-top").innerHTML = nameUser;
 
 function setSenderUI(nama, tanggallahir, gender, messages) {
     document.getElementById("sender-full-name").innerHTML = nama;
@@ -23,6 +22,9 @@ function validateForm() {
     if (nama === "" || tanggallahir === "" || gender === "" || messages === "") {
         alert("Tidak boleh ada yang kosong");
         return false;
+    }
+    else {
+        alert("Sukses Mengisi Form")
     }
 
     setSenderUI(nama, tanggallahir, gender, messages);
@@ -48,4 +50,4 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block"; 
 }
 
-
+setInterval(() => plusDivs(1), 2000);
